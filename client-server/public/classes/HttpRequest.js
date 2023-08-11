@@ -56,8 +56,9 @@ class HttpRequest {
                 resolve(obj);
     
             };
+            ajax.setRequestHeader('Content-Type','application/jaoson');
     
-            ajax.send();
+            ajax.send(JSON.stringify(params));
 
         });
 
