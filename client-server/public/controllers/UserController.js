@@ -206,7 +206,7 @@ class UserController {
         
 
         User.getUsersStorage().then(data => {
-
+            
             data.users.forEach(dataUser => {
 
                 let user = new User();
